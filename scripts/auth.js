@@ -1,7 +1,7 @@
 //listen for auth status changes
 auth.onAuthStateChanged(user => {
     if (user) {
-        db.collection('profiles').get().then(snapshot => {
+        db.collection('profiles').onSnapshot(snapshot => {
             setupGuides(snapshot.docs);
             setupUI(user);
         });
