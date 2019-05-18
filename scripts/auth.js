@@ -4,6 +4,8 @@ auth.onAuthStateChanged(user => {
         db.collection('profiles').onSnapshot(snapshot => {
             setupGuides(snapshot.docs);
             setupUI(user);
+        }).catch(err => {
+            console.log(err.message)
         });
     } else {
         setupUI();
