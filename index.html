@@ -21,7 +21,8 @@
           <li class="logged-in"style="display: none;">
             <a href="#" class="grey-text" id="logout">Logout</a>
           </li>
-          <li class="logged-in"style="display: none;">
+          <!-- Create Guide is admin -->
+          <li class="admin"style="display: none;">
             <a href="#" class="grey-text modal-trigger" data-target="modal-create">Create Profile</a>
           </li>
           <li class="logged-out"style="display: none;">
@@ -35,7 +36,7 @@
   </nav>
 
   <!-- Admin Actions -->
-  <form class="center-align admin-actions" style="margin: 40px auto; max-width: 300px;">
+  <form class="center-align admin-actions admin" style="margin: 40px auto; max-width: 300px; display: none;">
   <input type="email" placeholder="User email" id="admin-email" required />
   <button class="btn-small yellow darken-2 z-depth-0">Make admin</button>
   </form>
@@ -129,7 +130,7 @@
     const functions = firebase.functions();
 
     //update firestore settings
-    db.settings({ timestampsInSnapshots: true });
+    // db.settings({ timestampsInSnapshots: true });
 </script>
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
