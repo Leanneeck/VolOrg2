@@ -25,6 +25,10 @@
           <li class="admin"style="display: none;">
             <a href="#" class="grey-text modal-trigger" data-target="modal-create">Create Profile</a>
           </li>
+        <!--Make Admin is Admin function-->
+        <li class="admin"style="display: none;">
+          <a href="#" class="grey-text modal-trigger" data-target="modal-admin">Make Admin</a>
+        </li>
           <li class="logged-out"style="display: none;">
             <a href="#" class="grey-text modal-trigger" data-target="modal-login">Login</a>
           </li>
@@ -35,11 +39,17 @@
     </div>
   </nav>
 
+<!--Search Bar-->
+<form class="top-align admin-actions admin" style="margin: 40px auto; max-width: 300px; display: none;">
+  <input type="email" placeholder="Keywords" id="input-field" required />
+  <button class="btn-small yellow darken-2 z-depth-0">Search</button>
+</form>
+
   <!-- Admin Actions -->
-  <form class="center-align admin-actions admin" style="margin: 40px auto; max-width: 300px; display: none;">
-  <input type="email" placeholder="User email" id="admin-email" required />
-  <button class="btn-small yellow darken-2 z-depth-0">Make admin</button>
-  </form>
+  <!--<form class="center-align admin-actions admin" style="margin: 40px auto; max-width: 300px; display: none;">-->
+  <!--<input type="email" placeholder="User email" id="admin-email" required />-->
+  <!--<button class="btn-small yellow darken-2 z-depth-0">Make admin</button>-->
+  <!--</form>-->
   <!-- SIGN UP MODAL -->
   <div id="modal-signup" class="modal">
     <div class="modal-content">
@@ -87,6 +97,17 @@
       <div class="account-details"></div>
     </div>
   </div>
+
+<!-- MAKE ADMIN MODAL -->
+<div id="modal-admin" class="modal">
+  <div class="modal-content center-align">
+    <h4>Give a User Admin Status</h4><br />
+    <form class="center-align admin-actions admin" style="margin: 40px auto; max-width: 300px; display: none;">
+      <input type="email" placeholder="User email" id="admin-email" required />
+      <button class="btn-small yellow darken-2 z-depth-0">Make admin</button>
+    </form>
+  </div>
+</div>
   <!-- CREATE GUIDE MODAL -->
   <div id="modal-create" class="modal">
     <div class="modal-content">
