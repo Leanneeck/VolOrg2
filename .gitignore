@@ -66,3 +66,7 @@ node_modules/
 debug.log
 .idea/workspace.xml
 .idea/workspace.xml
+
+# For Angolia
+config.js
+

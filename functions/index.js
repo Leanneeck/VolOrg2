@@ -1,5 +1,16 @@
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');
+
+
+// Implementing Algolia
+const algoliasearch = require('algoliasearch');
+const ALGOLIA_ID = config().app_id;
+// const ALGOLIA_ADMIN_KEY = functions.config().algolia.admin_key;
+// const ALGOLIA_SEARCH_KEY = functions.config().algolia.search_key;
+// const ALGOLIA_INDEX_NAME = 'profiles';
+// const client = algoliasearch(ALGOLIA_ID, ALGOLIA_ADMIN_KEY);
+// Done implementing Algolia
+
 admin.initializeApp();
 
 exports.addAdminRole = functions.https.onCall((data, context) => {
