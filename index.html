@@ -15,6 +15,12 @@
         <img src="img/logo.svg" style="width: 180px; margin-top: 10px;">
       </a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li class="logged-in"style="display: none;">
+          <a href="index.html" class="grey-text modal-trigger">Browse</a>
+        </li>
+        <li class="logged-in"style="display: none;">
+          <a href="search.html" class="grey-text modal-trigger">Search</a>
+        </li>
           <li class="logged-in"style="display: none;">
             <a href="#" class="grey-text modal-trigger" data-target="modal-account">Account</a>
           </li>
@@ -44,6 +50,7 @@
   <input type="email" placeholder="Keywords" id="input-field" required />
   <button class="btn-small yellow darken-2 z-depth-0">Search</button>
 </form>
+
 
   <!-- Admin Actions -->
   <!--<form class="center-align admin-actions admin" style="margin: 40px auto; max-width: 300px; display: none;">-->
@@ -131,8 +138,8 @@
     </ul>
   </div>
 <!--Scripts for Angolia-->
-<!--<script type='text/javascript' src='config.js'></script>-->
-<!--<script type='text/javascript' src='scripts/index.js'></script>-->
+<script type='text/javascript' src='config.js'></script>
+<script type='text/javascript' src='scripts/index.js'></script>
 <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase-firestore.js"></script>
