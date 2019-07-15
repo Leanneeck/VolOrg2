@@ -48,7 +48,9 @@ const setupGuides = (data) => {
 
         guideList.innerHTML = html;
     } else {
-        guideList.innerHTML = '<h5 class="center-align">Login to view profiles</h>'
+        guideList.innerHTML = '<h5 class="center-align">Where Volunteers and Organizations Connect</h> ' +
+            '<br> <img src="img/girldog.jpg" alt="Girl with dog" width="500" height="600" class="center">' +
+            '<h5 class="center-align">Login to view profiles</h>'
     }
 }
 
