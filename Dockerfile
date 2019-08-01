@@ -1,5 +1,7 @@
 # use latest Node LTS (currently Dubnium)
-FROM node:dubnium-slim
+#FROM node:dubnium-slim
+FROM httpd
+COPY ./Desktop/VolOrg2
 
 # set user to avoid permission issues
 # (see https://github.com/nodejs/node-gyp/issues/1236)
@@ -13,3 +15,4 @@ RUN npm install -g firebase-tools
 
 # reset user back to root
 USER root
+

@@ -1,0 +1,28 @@
+{
+  "name": "volorg2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "config.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "firebase": "^6.3.3",
+    "firebase-functions": "^3.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leanneeck/VolOrg2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leanneeck/VolOrg2/issues"
+  },
+  "homepage": "https://github.com/Leanneeck/VolOrg2#readme",
+  "engines": {
+    "node": "12.1.0"
+  }
+}
